@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "CasaInteligentePI/1.0.0": {
+        "runtime": {
+          "CasaInteligentePI.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CasaInteligentePI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
