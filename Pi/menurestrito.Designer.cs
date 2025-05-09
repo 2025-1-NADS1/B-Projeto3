@@ -28,26 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
             button2 = new Button();
+            voltar = new PictureBox();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)voltar).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
-            // 
-            // button1
-            // 
-            button1.BackColor = SystemColors.ActiveCaption;
-            button1.BackgroundImageLayout = ImageLayout.None;
-            button1.ForeColor = SystemColors.ControlText;
-            button1.Location = new Point(677, 38);
-            button1.Name = "button1";
-            button1.Size = new Size(92, 23);
-            button1.TabIndex = 0;
-            button1.Text = "Recompensa";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(694, 178);
+            button2.Location = new Point(711, 208);
             button2.Name = "button2";
             button2.Size = new Size(75, 23);
             button2.TabIndex = 1;
@@ -55,21 +45,47 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
+            // voltar
+            // 
+            voltar.Image = Properties.Resources.LOGIN__59_4_x_42_cm___1_;
+            voltar.Location = new Point(686, 12);
+            voltar.Name = "voltar";
+            voltar.Size = new Size(100, 50);
+            voltar.SizeMode = PictureBoxSizeMode.Zoom;
+            voltar.TabIndex = 2;
+            voltar.TabStop = false;
+            voltar.Click += pictureBox1_Click;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.LOGIN__59_4_x_42_cm___2_;
+            pictureBox1.Location = new Point(686, 103);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(100, 50);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 3;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click_1;
+            // 
             // menurestrito
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(800, 450);
+            Controls.Add(pictureBox1);
+            Controls.Add(voltar);
             Controls.Add(button2);
-            Controls.Add(button1);
             Name = "menurestrito";
-            Text = "menurestrito";
+            Text = " ";
+            ((System.ComponentModel.ISupportInitialize)voltar).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
-
-        private Button button1;
         private Button button2;
+        private PictureBox voltar;
+        private PictureBox pictureBox1;
     }
 }

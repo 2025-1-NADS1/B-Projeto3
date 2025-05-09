@@ -24,7 +24,7 @@ namespace Pi
             this.Visible = false;
         }
 
-         private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
 
         }
@@ -34,6 +34,18 @@ namespace Pi
 
         }
 
-       
+        private void pictureBox1_Click(object sender, EventArgs e) //picture para voltar
+        {
+            var voltar = new login();
+            voltar.Show();
+            this.Visible = false;
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+            var recompensa = new gamefication();
+            recompensa.Show();
+            this.Visible = false;
+        }
     }
 }

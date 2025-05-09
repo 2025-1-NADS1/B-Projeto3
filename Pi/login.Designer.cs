@@ -31,13 +31,14 @@
             textBox1 = new TextBox();
             pictureBox1 = new PictureBox();
             textBox2 = new TextBox();
-            button1 = new Button();
+            pictureBox2 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(220, 227);
+            textBox1.Location = new Point(220, 210);
             textBox1.Name = "textBox1";
             textBox1.PlaceholderText = "User";
             textBox1.Size = new Size(365, 23);
@@ -57,38 +58,39 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(220, 273);
+            textBox2.Location = new Point(220, 256);
             textBox2.Name = "textBox2";
             textBox2.PlaceholderText = "Password";
             textBox2.Size = new Size(365, 23);
             textBox2.TabIndex = 2;
             textBox2.TextChanged += textBox2_TextChanged;
             // 
-            // button1
+            // pictureBox2
             // 
-            button1.BackColor = SystemColors.ActiveCaption;
-            button1.ForeColor = SystemColors.MenuHighlight;
-            button1.Location = new Point(303, 345);
-            button1.Name = "button1";
-            button1.Size = new Size(184, 26);
-            button1.TabIndex = 3;
-            button1.Text = "Login";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            pictureBox2.Image = Properties.Resources.LOGIN__59_4_x_42_cm_;
+            pictureBox2.Location = new Point(123, 223);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(554, 252);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 4;
+            pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(800, 450);
-            Controls.Add(button1);
             Controls.Add(textBox2);
             Controls.Add(pictureBox1);
             Controls.Add(textBox1);
+            Controls.Add(pictureBox2);
             Name = "login";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -98,6 +100,6 @@
         private TextBox textBox1;
         private PictureBox pictureBox1;
         private TextBox textBox2;
-        private Button button1;
+        private PictureBox pictureBox2;
     }
 }

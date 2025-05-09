@@ -69,5 +69,35 @@ namespace Pi.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LOGIN__59_4_x_42_cm_ {
+            get {
+                object obj = ResourceManager.GetObject("LOGIN (59.4 x 42 cm)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LOGIN__59_4_x_42_cm___1_ {
+            get {
+                object obj = ResourceManager.GetObject("LOGIN (59.4 x 42 cm) (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LOGIN__59_4_x_42_cm___2_ {
+            get {
+                object obj = ResourceManager.GetObject("LOGIN (59.4 x 42 cm) (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

@@ -16,5 +16,12 @@ namespace Pi
         {
             InitializeComponent();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            var menu = new menurestrito();
+            menu.Show();
+            this.Visible = false;
+        }
     }
 }
