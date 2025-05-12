@@ -28,29 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button2 = new Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(menurestrito));
             voltar = new PictureBox();
             pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            pictureBox3 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)voltar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
-            // 
-            // button2
-            // 
-            button2.Location = new Point(711, 208);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 1;
-            button2.Text = "Contas";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
             // 
             // voltar
             // 
-            voltar.Image = Properties.Resources.LOGIN__59_4_x_42_cm___1_;
-            voltar.Location = new Point(686, 12);
+            voltar.Image = (Image)resources.GetObject("voltar.Image");
+            voltar.Location = new Point(662, 35);
             voltar.Name = "voltar";
-            voltar.Size = new Size(100, 50);
+            voltar.Size = new Size(116, 85);
             voltar.SizeMode = PictureBoxSizeMode.Zoom;
             voltar.TabIndex = 2;
             voltar.TabStop = false;
@@ -58,14 +52,36 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources.LOGIN__59_4_x_42_cm___2_;
-            pictureBox1.Location = new Point(686, 103);
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(662, 186);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(100, 50);
+            pictureBox1.Size = new Size(116, 85);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click_1;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = Properties.Resources.LOGIN__59_4_x_42_cm___3_;
+            pictureBox2.Location = new Point(356, -45);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(722, 541);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 4;
+            pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = Properties.Resources.LOGIN__59_4_x_42_cm___5_;
+            pictureBox3.Location = new Point(662, 333);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(116, 85);
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox3.TabIndex = 5;
+            pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
             // 
             // menurestrito
             // 
@@ -73,19 +89,23 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(800, 450);
+            Controls.Add(pictureBox3);
             Controls.Add(pictureBox1);
             Controls.Add(voltar);
-            Controls.Add(button2);
+            Controls.Add(pictureBox2);
             Name = "menurestrito";
             Text = " ";
             ((System.ComponentModel.ISupportInitialize)voltar).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
-        private Button button2;
         private PictureBox voltar;
         private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox3;
     }
 }
