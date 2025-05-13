@@ -3,25 +3,14 @@
 </p>
 
 
-# Portfólio
-
-Seja bem vindo ao portfólio dos cursos de Análise e Desenvolvimento de Sistemas, e Ciência da Computação da FECAP!
-
-Aqui você encontrará todos os projetos desenvolvidos pelos alunos durante seu período na FECAP.
-
-Qualquer projeto que encontra-se aqui pode ser usado, desde que atribua os autores do projeto. Apenas tenha cuidado com alguns dos projetos que possuem licenças de terceiros, que devem ser respeitadas.
-
-Todos os projetos aqui estão sob a licensa <a href="https://creativecommons.org/licenses/by/4.0/"> Creative Commons Attribution 4.0 International </a>.
-
-Quaisquer dúvidas, basta entrar em contato com victor.quiroz@fecap.br .
 
 ### Professores Envolvidos
 
 Para a execução de todos os projetos há uma equipe fenomenal envolvida e aqui estão seus membros:
 
-<br> Adriano Felix Valente 
-<br><a href="https://www.linkedin.com/in/aimarlopes/" target="_blank" rel="noopener noreferrer"> Aimar Martins Lopes </a>
-<br><a href="https://www.linkedin.com/in/dolemes/" target="_blank" rel="noopener noreferrer"> David de Oliveira Lemes</a>
+<br> Guilherme Gomes Salvadeo 25027009
+<br> Pedro Henrique araújo del picolo 
+<br> 
 <br><a href="https://www.linkedin.com/in/edsonbarbero/" target="_blank" rel="noopener noreferrer"> Edson Barbero</a>
 <br><a href="https://www.linkedin.com/in/eduardo-savino-gomes-77833a10/" target="_blank" rel="noopener noreferrer"> Eduardo Savino Gomes </a>
 <br><a href="https://www.linkedin.com/in/fabiano-on%C3%A7a-3214a12/" target="_blank" rel="noopener noreferrer"> Fabiano Onça </a>
