@@ -19,7 +19,7 @@ Quaisquer dúvidas, basta entrar em contato com victor.quiroz@fecap.br .
 
 Para a execução de todos os projetos há uma equipe fenomenal envolvida e aqui estão seus membros:
 
-<br><a href= Adriano Felix Valente </a>
+<br> Adriano Felix Valente 
 <br><a href="https://www.linkedin.com/in/aimarlopes/" target="_blank" rel="noopener noreferrer"> Aimar Martins Lopes </a>
 <br><a href="https://www.linkedin.com/in/dolemes/" target="_blank" rel="noopener noreferrer"> David de Oliveira Lemes</a>
 <br><a href="https://www.linkedin.com/in/edsonbarbero/" target="_blank" rel="noopener noreferrer"> Edson Barbero</a>
