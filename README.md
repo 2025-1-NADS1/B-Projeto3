@@ -27,12 +27,15 @@ Vide tutoriais do PI.
 </p>
 
 
-De um a dois parágrafos sobre o que é seu projeto e o que ele faz.
+Este projeto tem como principal objetivo conscientizar os usuários sobre o consumo de energia elétrica e água em uma residência automatizada — uma smart house. Em um contexto onde a sustentabilidade é cada vez mais essencial, buscamos mostrar que pequenas ações conscientes no dia a dia podem gerar grandes impactos no futuro.
+
+A aplicação foi desenvolvida com foco em educação ambiental, integrando tecnologia, automação e visualização de dados para promover a mudança de comportamento dos moradores da casa em relação ao uso de recursos naturais.
 <br><br>
-Meu projeto ajuda estudantes FECAP a configurarem seus githubs.
+O sistema monitora o consumo de energia elétrica e água e apresenta esses dados de forma visual e acessível, por meio de gráficos e tabelas atualizadas semanalmente. Isso permite ao usuário acompanhar seu histórico de uso, identificar padrões e refletir sobre hábitos que podem ser melhorados.
+
+Além do monitoramento, o projeto inclui um sistema de recompensas: quanto mais o usuário economiza, mais recompensas simbólicas ele recebe. Esse recurso gamificado incentiva a economia de forma positiva, tornando a experiência mais interativa e motivadora.
 <br><br>
-May the force be with you!
-<br><br>
+
 
 ## 🛠 Estrutura de pastas
 
