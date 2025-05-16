@@ -115,6 +115,71 @@ Utilize o link <https://chooser-beta.creativecommons.org/> para fazer uma licen�
 Fundamentos de Bancos de Dados
 Segunda Entrega
 ....
+📋 Documentação das Tabelas – Sistema de Casa Inteligente
+🏠 CASA
+Essa tabela guarda as informações principais sobre cada residência cadastrada no sistema.
+
+id_casa (int): Identificador único da casa.
+
+nome (varchar 100): Nome dado à casa (ex: "Casa da Praia", "Apartamento 202").
+
+endereco (varchar 255): Endereço completo da casa.
+
+Campo (int): Campo adicional (pode ser usado para funcionalidades extras ou futuras integrações).
+
+🛋️ COMODOS
+Aqui ficam os dados dos cômodos de cada casa, como quartos, salas, banheiros etc.
+
+id_comodo (int): Identificador único do cômodo.
+
+nome (varchar 100): Nome do cômodo (ex: "Sala de Estar", "Cozinha").
+
+tipo (varchar 50): Tipo do cômodo (ex: quarto, banheiro).
+
+id_casa (int): Referência de qual casa esse cômodo faz parte.
+
+Campo (int): Campo adicional para uso futuro ou auxiliar.
+
+💡 Uma casa pode ter vários cômodos, mas cada cômodo pertence a apenas uma casa.
+
+📱 DISPOSITIVOS
+Essa tabela armazena todos os dispositivos inteligentes que você instalou (como lâmpadas, câmeras, sensores, etc).
+
+nome (varchar): Nome do dispositivo.
+
+tipo (varchar 200): Tipo do dispositivo (ex: "Lâmpada", "Sensor de Movimento").
+
+status (varchar 50): Estado atual (ex: "ligado", "desligado").
+
+id_comodo (int): Em qual cômodo esse dispositivo está.
+
+id_disp (int): Identificador único do dispositivo.
+
+Campo (int): Campo extra para controle ou funcionalidades adicionais.
+
+⚙️ AUTOMACAO
+Define as automações configuradas no sistema, ou seja, as regras para que algo aconteça automaticamente.
+
+nome (varchar 100): Nome da automação (ex: "Ligar luz ao anoitecer").
+
+acao (varchar 255): Ação que será realizada (ex: "ligar luz").
+
+condicao (varchar 255): Condição que ativa a ação (ex: "se hora for 18h").
+
+id_auto (int): Identificador único da automação.
+
+id_dispositivo (int): Qual dispositivo será afetado.
+
+Campo (int): Campo adicional, caso precise de mais controle.
+
+🔗 Relacionamentos
+Uma casa pode ter vários cômodos.
+
+Cada cômodo pode ter vários dispositivos.
+
+Um dispositivo pode ser controlado por várias automações e vice-versa.
+
+Automações também podem se relacionar a cômodos dependendo da lógica do sistema.
 
 
 
