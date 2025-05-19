@@ -111,7 +111,7 @@ Coloque código do prompt de comnando se for necessário
 Utilize o link <https://chooser-beta.creativecommons.org/> para fazer uma licença CC BY 4.0.
 
 
-## 🎓 Entrega Disciplina Entrega Disciplina
+## 🎓 Entrega Disciplina 
 Fundamentos de Bancos de Dados
 Segunda Entrega
 ....
