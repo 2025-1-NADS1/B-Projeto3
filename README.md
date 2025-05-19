@@ -181,6 +181,8 @@ Um dispositivo pode ser controlado por várias automações e vice-versa.
 
 Automações também podem se relacionar a cômodos dependendo da lógica do sistema.
 
+https://github.com/2025-1-NADS1/B-Projeto3/blame/177f87c16e465946dc3882993df43c30df30221e/README.md
+
 
 
 
