@@ -1,0 +1,111 @@
+1. Visão Geral do Sistema
+O sistema de Casa Inteligente tem como objetivo automatizar o controle de dispositivos eletrônicos em diferentes cômodos de uma residência, permitindo ao usuário visualizar o status dos dispositivos, configurar regras automáticas e acompanhar estatísticas de consumo, promovendo a conscientização sobre o uso de energia elétrica.
+
+2. Arquitetura em Camadas
+O sistema será dividido em três camadas principais, seguindo o padrão de arquitetura multicamadas:
+
+2.1. Camada de Apresentação (Interface do Usuário)
+Interface construída com Windows Forms (WinForms)
+
+Responsável por exibir dados ao usuário e receber interações
+
+Exemplos: Tela de login, tela de dispositivos, tela de configurações de automação
+
+2.2. Camada de Lógica de Negócio
+Contém as regras do sistema (ex: ativar dispositivos conforme condições, processar dados de consumo)
+
+Classes e métodos que implementam os comportamentos do sistema
+
+Ex: AutomacaoService, DispositivoService, UsuarioService
+
+2.3. Camada de Persistência de Dados
+Gerencia o acesso ao banco de dados (MySQL)
+
+Usa MySql.Data.MySqlClient para realizar operações SELECT, INSERT, UPDATE, DELETE
+
+Repositórios específicos para cada entidade: UsuarioRepository, DispositivoRepository, etc.
+
+3. Modelagem do Sistema
+3.1. Diagrama de Caso de Uso (Resumo textual)
+Atores:
+
+Usuário
+
+Casos de uso:
+
+Visualizar dispositivos por cômodo
+
+Ativar/desativar dispositivo
+
+Criar regras de automação (ex: ligar luz às 18h)
+
+Ver consumo de energia por dispositivo
+
+Receber alertas de consumo alto
+
+3.2. Diagrama de Classes (Resumo textual)
+Principais classes:
+
+Usuario: id, nome, email, senha
+
+Comodo: id, nome, localizacao
+
+Dispositivo: id, tipo, status, comodoId, consumo
+
+Automacao: id, condicao, acao, horario, dispositivoId
+
+Relacionamentos:
+
+Usuario → 1:N → Comodo
+
+Comodo → 1:N → Dispositivo
+
+Dispositivo → 1:1 → Automacao
+
+  Perfeito! Vamos reformular os itens *4. Fluxo de Interação Entre Camadas* e *5. Organização Modular* com *descrições claras e explicativas*, sem usar trechos de código.
+
+---
+
+## *4. Fluxo de Interação Entre Camadas (Descrição)*
+
+O sistema é construído sobre uma arquitetura em camadas, onde cada parte possui responsabilidades bem definidas. A interação entre essas camadas ocorre da seguinte forma:
+
+1. *Camada de Apresentação (Interface do Usuário)*
+   O usuário interage com o sistema por meio de telas gráficas (formularios). Nessa camada, ele pode visualizar dispositivos, controlar seus estados (ligar/desligar), configurar automações e consultar informações de consumo. Todas as ações do usuário são convertidas em comandos que são enviados para a camada de lógica de negócio.
+
+2. *Camada de Lógica de Negócio (Processamento e Regras)*
+   Esta camada recebe os comandos vindos da interface e trata as regras do sistema. Por exemplo, ao solicitar que um dispositivo seja desligado automaticamente às 22h, essa camada verifica se a ação é válida, prepara os dados e decide qual será a próxima etapa. Ela é responsável por coordenar o funcionamento interno do sistema, mantendo a lógica central separada da interface e do banco de dados.
+
+3. *Camada de Persistência de Dados (Banco de Dados)*
+   Após o processamento, a camada de lógica de negócio envia instruções para a camada de dados. Esta, por sua vez, é responsável por realizar as operações necessárias no banco (como salvar, atualizar ou recuperar informações). Os dados retornam da base para a lógica de negócio, que os processa novamente se necessário, e envia de volta à interface, que então apresenta os resultados ao usuário.
+
+Esse fluxo garante organização, reutilização de código e facilidade na manutenção, pois cada camada se comunica *somente com a imediatamente adjacente*, e cada uma tem uma função clara.
+
+---
+
+## *5. Organização Modular (Descrição)*
+
+O sistema é organizado de forma modular, o que significa que ele é dividido em componentes independentes, mas interligados, que trabalham juntos para compor a aplicação como um todo. Cada módulo possui uma responsabilidade específica e é projetado para ser facilmente substituído, atualizado ou expandido sem afetar os demais.
+
+### Características da organização modular:
+
+* *Separação de responsabilidades*: Cada parte do sistema (interface, lógica, dados) está separada, o que facilita testes, manutenção e futuras melhorias.
+
+* *Facilidade de manutenção*: Como cada módulo tem uma função clara e isolada, alterações em um não causam impactos nos outros. Por exemplo, trocar o banco de dados por outro (como PostgreSQL) exigiria mudanças apenas no módulo de persistência de dados.
+
+* *Reutilização de componentes*: Os módulos podem ser reaproveitados em outros projetos ou funcionalidades. Por exemplo, o módulo de autenticação do usuário pode ser usado em outro sistema com poucas alterações.
+
+* *Escalabilidade*: Com a estrutura modular, é possível adicionar novos dispositivos, sensores ou funcionalidades (como controle por voz ou integração com apps móveis) sem precisar refazer o sistema. Basta criar novos módulos ou estender os existentes.
+
+Essa organização modular é essencial para garantir que o sistema evolua de forma controlada e eficiente, além de facilitar o trabalho em equipe, já que cada desenvolvedor pode atuar em um módulo diferente de forma independente.
+
+---
+
+6. Escalabilidade e Eficiência
+A arquitetura permite a adição de novos dispositivos ou funcionalidades (ex: sensores de fumaça, câmeras) sem alterações drásticas no código.
+
+Separação em camadas reduz dependências e aumenta a manutenibilidade.
+
+Uso de DataTable e MySqlDataAdapter garante leitura eficiente dos dados.
+
+Possibilidade de migrar futuramente para uma API com front-end web/mobile sem reescrever a lógica.
